@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Ambalan Pramuka SMKS Shalatiyah Bitin</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fdf8f2;
+      color: #3b2612;
+    }
+
+    header.navbar {
+      background-color: #6b4226;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: #ffd28f;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    main {
+      text-align: center;
+      padding: 60px 10%;
+    }
+
+    /* Animasi Fade In */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .judul-utama {
+      font-size: 2.5em;
+      color: #5c3b1e;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .subjudul {
+      font-size: 1.2em;
+      color: #7a5531;
+      margin-top: 10px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    /* === LOGO SECTION === */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+      animation: fadeIn 2.5s ease forwards;
+    }
+
+    .logo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 5px double #8b5e3c;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      background-color: #fffaf3;
+    }
+
+    .logo-item img:hover {
+      transform: scale(1.07);
+    }
+
+    .logo-item span {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #5c3b1e;
+    }
+
+    .deskripsi {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fffaf3;
+      padding: 25px;
+      border: 4px double #a47449;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      text-align: justify;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    footer {
+      background-color: #6b4226;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #6b4226;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 60%;
+        padding: 10px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .logo-container {
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🔥 Ambalan Pramuka</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="struktur.html">Struktur</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Konten -->
+  <main>
+    <h1 class="judul-utama">Selamat Datang di Ambalan Pramuka<br>SMKS Shalatiyah Bitin</h1>
+    <p class="subjudul">Tempat Membentuk Generasi Muda yang Beriman, Disiplin, dan Tangguh</p>
+
+    <!-- LOGO SEKOLAH & AMBALAN -->
+    <div class="logo-container">
+      <div class="logo-item">
+        <img src="smk.png" alt="Logo SMKS Shalatiyah Bitin">
+        <span>Logo Sekolah</span>
+      </div>
+      <div class="logo-item">
+        <img src="amba.jpeg" alt="Logo Ambalan Pramuka">
+        <span>Logo Ambalan</span>
+      </div>
+    </div>
+
+    <!-- Deskripsi -->
+    <div class="deskripsi">
+      <p>
+        Ambalan Pramuka SMKS Shalatiyah Bitin merupakan wadah pembinaan karakter, 
+        kepemimpinan, dan keterampilan bagi para siswa penegak. 
+        Di bawah bimbingan Pembina yang berpengalaman, Ambalan ini terus berupaya 
+        mengembangkan kegiatan yang berlandaskan Tri Satya dan Dasa Dharma Pramuka.
+      </p>
+      <p>
+        Dengan semangat “Satyaku Kudarmakan, Darmaku Kubaktikan”, 
+        Ambalan Pramuka menjadi tempat lahirnya generasi muda yang siap mengabdi kepada 
+        masyarakat, bangsa, dan negara, serta menjunjung tinggi nilai-nilai kejujuran, 
+        kerja sama, dan tanggung jawab.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Ambalan Pramuka | SMKS Shalatiyah Bitin</p>
+  </footer>
+
+  <script>
+    // Script untuk toggle navbar di HP
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

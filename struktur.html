@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struktur Organisasi | Ambalan Pramuka</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+    /* ======== GAYA KHUSUS STRUKTUR ======== */
+    body {
+      background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-color: #f7f2e9;
+    }
+
+    .judul-halaman {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 40px;
+      color: #5c3b1e;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .struktur-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px 10%;
+    }
+
+    .ambalan-box {
+      background: #fff8ef;
+      border: 6px double #8b5e3c;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      flex: 1 1 400px;
+      max-width: 550px;
+      padding: 25px;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .ambalan-box:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .ambalan-box::before {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border: 2px dashed #b47d3d;
+      border-radius: 20px;
+      pointer-events: none;
+    }
+
+    .ambalan-title {
+      text-align: center;
+      background: linear-gradient(to right, #6b4226, #a47449);
+      color: white;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+
+    .struktur-card {
+      background: #fff;
+      border-left: 6px solid #8b5e3c;
+      border-radius: 10px;
+      margin: 10px 0;
+      padding: 10px 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .struktur-card:hover {
+      transform: translateX(5px);
+      background-color: #f6efe4;
+    }
+
+    .struktur-card strong {
+      color: #5a371a;
+      display: block;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #6b4226;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .ambalan-box {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">🔥 Ambalan Pramuka</div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="struktur.html" class="active">Struktur</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <main>
+    <h2 class="judul-halaman">Struktur Organisasi Ambalan Pramuka SMKS Shalatiyah Bitin</h2>
+
+    <div class="struktur-wrapper">
+      <!-- Ambalan Putra -->
+      <div class="ambalan-box">
+        <div class="ambalan-title">Ambalan Putra</div>
+        <div class="struktur-card"><strong>Pradana:</strong> Ahmad Mogani Ali</div>
+        <div class="struktur-card"><strong>Pemangku Adat:</strong> M. Ridani</div>
+        <div class="struktur-card"><strong>Kerani (Sekretaris):</strong> Gio</div>
+        <div class="struktur-card"><strong>Juru Uang (Bendahara):</strong> Muhammad Zaky</div>
+
+        <div class="struktur-card"><strong>Bidang Madya Cakra (Teknik Kepramukaan):</strong> Aidil, Muhammad Rasyid Fitri</div>
+        <div class="struktur-card"><strong>Bidang Warta Bakti (Humas):</strong> Ahmat Dani, M. Rajibi, Muhaimin</div>
+        <div class="struktur-card"><strong>Bidang Wijaya Karya (Kegiatan & Operasional):</strong> Nazwatur Ridha, Syahid, Wahit</div>
+        <div class="struktur-card"><strong>Bidang Bhinneka Guna (Inventaris & Evaluasi):</strong> Muhammad Hafi, Toni Saputra, Safaruddin</div>
+        <div class="struktur-card"><strong>Bidang Arsip Asta (Dokumentasi & Publikasi):</strong> Ahmad Syafi'i, Muhammad Fahry, M. Yasin</div>
+      </div>
+
+      <!-- Ambalan Putri -->
+      <div class="ambalan-box">
+        <div class="ambalan-title">Ambalan Putri</div>
+        <div class="struktur-card"><strong>Pradana:</strong> Wahdatuzzakiah</div>
+        <div class="struktur-card"><strong>Pemangku Adat:</strong> Netty Agustina</div>
+        <div class="struktur-card"><strong>Kerani (Sekretaris):</strong> Nor Thaibah</div>
+        <div class="struktur-card"><strong>Juru Uang (Bendahara):</strong> Nurul</div>
+
+        <div class="struktur-card"><strong>Bidang Madya Cakra (Teknik Kepramukaan):</strong> Ana Amelia</div>
+        <div class="struktur-card"><strong>Bidang Warta Bakti (Humas):</strong> Norlatifah, Siti Khadijah</div>
+        <div class="struktur-card"><strong>Bidang Wijaya Karya (Kegiatan & Operasional):</strong> Madina</div>
+        <div class="struktur-card"><strong>Bidang Bhinneka Guna (Inventaris & Evaluasi):</strong> Lydia, Aulia Maulida Rahma</div>
+        <div class="struktur-card"><strong>Bidang Arsip Asta (Dokumentasi & Publikasi):</strong> Aina Ul Mardiah, Lini Safitri Nabila</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Ambalan Pramuka | SMKS Shalatiyah Bitin</p>
+  </footer>
+</body>
+</html>

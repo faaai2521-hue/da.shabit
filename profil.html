@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Ambalan | Pramuka SMKS Shalatiyah Bitin</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      background: #fdf8f2;
+      font-family: "Poppins", sans-serif;
+      color: #3b2612;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.navbar {
+      background-color: #6b4226;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: #ffd28f;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 40px 10%;
+    }
+
+    .judul {
+      text-align: center;
+      font-size: 2em;
+      color: #5c3b1e;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .profil-card {
+      background: #fffaf3;
+      border: 4px double #8b5e3c;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+
+    .profil-card h3 {
+      background: linear-gradient(to right, #6b4226, #a47449);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .profil-card p {
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .visi-misi {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .visi, .misi {
+      flex: 1 1 45%;
+      background-color: #fff7ea;
+      border: 3px solid #a47449;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .misi ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .lambang {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .lambang img {
+      width: 150px;
+      height: auto;
+      border-radius: 15px;
+      border: 3px solid #8b5e3c;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+
+    .footer {
+      background-color: #6b4226;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .visi, .misi {
+        flex: 1 1 100%;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #6b4226;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 60%;
+        padding: 10px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🔥 Ambalan Pramuka</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html" class="active">Profil</a>
+      <a href="struktur.html">Struktur</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Konten Profil -->
+  <main>
+    <h2 class="judul">Profil Ambalan Pramuka SMKS Shalatiyah Bitin</h2>
+
+    <div class="profil-card">
+      <h3>Tentang Ambalan</h3>
+      <p>
+        Ambalan Pramuka SMKS Shalatiyah Bitin merupakan wadah kegiatan kepramukaan bagi siswa penegak yang berfungsi untuk mengembangkan potensi, kedisiplinan, dan jiwa kepemimpinan peserta didik. 
+        Ambalan ini menjadi bagian dari Gugus Depan yang berpangkalan di sekolah dan berada di bawah Kwartir Ranting setempat.
+      </p>
+      <p>
+        Ambalan kami berkomitmen untuk membentuk generasi muda yang beriman, bertaqwa, tangguh, dan berjiwa sosial tinggi, sesuai dengan semangat Dasa Dharma dan Tri Satya Pramuka.
+      </p>
+    </div>
+
+    <div class="profil-card">
+      <h3>Visi & Misi</h3>
+      <div class="visi-misi">
+        <div class="visi">
+          <h4>Visi</h4>
+          <p>
+            Membentuk generasi muda yang berkarakter, disiplin, mandiri, dan memiliki semangat kebangsaan melalui kegiatan kepramukaan yang kreatif, inovatif, dan berlandaskan iman serta takwa.
+          </p>
+        </div>
+        <div class="misi">
+          <h4>Misi</h4>
+          <ul>
+            <li>Menanamkan nilai-nilai Dasa Dharma dan Tri Satya dalam kehidupan sehari-hari.</li>
+            <li>Meningkatkan keterampilan kepramukaan yang berguna bagi masyarakat.</li>
+            <li>Membangun semangat kepemimpinan dan kebersamaan antar anggota.</li>
+            <li>Mendorong partisipasi aktif dalam kegiatan sosial dan lingkungan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="profil-card">
+      <h3>Makna Lambang Ambalan</h3>
+      <div class="lambang">
+        <img src="balan.jpeg" alt="Lambang Ambalan">
+      </div>
+      <p>
+        Lambang Ambalan menggambarkan semangat pantang menyerah, persaudaraan, dan tekad kuat untuk mengabdi kepada masyarakat, bangsa, dan negara. 
+        Warna coklat melambangkan kedewasaan dan ketenangan, sedangkan warna hijau melambangkan harapan dan kehidupan.
+      </p>
+    </div>
+
+    <div class="profil-card">
+      <h3>Semboyan & Moto</h3>
+      <p style="text-align:center; font-style:italic; font-size:1.1em; color:#6b4226;">
+        “Satyaku Kudarmakan, Darmaku Kubaktikan”
+      </p>
+      <p>
+        Semboyan ini menjadi semangat utama setiap anggota Ambalan dalam menjalankan tugas dan tanggung jawabnya, baik di sekolah maupun di masyarakat.
+      </p>
+    </div>
+
+    <div class="profil-card">
+      <h3>Nilai-Nilai Kepramukaan</h3>
+      <ul>
+        <li>Keimanan dan ketakwaan kepada Tuhan Yang Maha Esa</li>
+        <li>Kedisiplinan dan tanggung jawab</li>
+        <li>Kemandirian dan kepemimpinan</li>
+        <li>Kepedulian sosial dan lingkungan</li>
+        <li>Semangat gotong royong dan persaudaraan</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Ambalan Pramuka | SMKS Shalatiyah Bitin</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
